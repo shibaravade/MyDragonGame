@@ -1,0 +1,71 @@
+<div class="gameDiv container">
+  <div class="gameInnerDiv">
+    <div class="row">
+      <div class="playerInner col-sm-6">
+        <div class="plyImg img-responsive">
+          <img src="../assets/ply.png" alt="dragon">
+        </div>
+        <div class="youHealth">
+          <div [ngStyle]="{'width':yourHealth+'%','background-color': 'green', height: '30px'}"> {{yourHealth}}% </div>
+        </div>
+        <div>
+          <label *ngIf="looseFlag"><strong> You Loose..!</strong></label>
+        </div>
+      </div>
+      <div class="dragonInner col-sm-6">
+        <div class="dragImg img-responsive">
+          <img src="../assets/dragonimg.png" alt="dragon">
+        </div>
+        <div class="dragHealth">
+          <div [ngStyle]="{'width':dragonHealth+'%','background-color': 'green', height: '30px'}">{{dragonHealth}}%
+          </div>
+        </div>
+        <div>
+          <label *ngIf="looseDrgnFlag"><strong>Dragon Loose..!</strong></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="btnDiv playButtons">
+      <input type="button" class="btn-danger" value="Attack" (click)="performAction(1)"> &nbsp;&nbsp;
+      <input type="button" value="Blast" class="btn-warning" (click)="performAction(2)"> &nbsp;&nbsp;
+      <input type="button" value="Heal" class="btn-success" (click)="performAction(3)"> &nbsp;&nbsp;
+      <input type="button" class="btn-primary" data-toggle="modal" data-target="#exampleModal" value="Give Up">
+    </div>
+  </div>
+  <div class="commentBox container">
+    <div class="table-responsive divComment">
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <td colspan="2" align="center">
+              <strong> Game Commentray</strong></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let itm of comnt">
+            <td>You attack Dragon by {{itm.Your}}</td>
+            <td> Dragon attack You by {{itm.drg}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">You LOSE. Do you want a re-match?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <a routerLink="/start"><button type="button" class="btn btn-secondary" data-dismiss="modal"> YES </button></a>
+        <a routerLink="/gamewindow"> <button type="button" class="btn btn-secondary" data-dismiss="modal">NO</button></a>
+      </div>
+    </div>
+  </div>
+</div>

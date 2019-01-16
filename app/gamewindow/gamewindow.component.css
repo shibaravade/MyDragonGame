@@ -1,0 +1,72 @@
+.gameDiv{
+    position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       width: 750px;
+       height: 520px;
+       padding: 80px,40px;
+       box-sizing: border-box;
+       background: rgb(13, 13, 14,0.5);
+   }
+.gameInnerDiv{
+       position: relative;
+       top: 10%;     
+   }
+.btnDiv{
+    position: relative;
+    top: 50px;
+   }
+.btnDiv input{
+       width: 90px;
+       margin-right: 10px;
+   }
+.commentBox{
+       position: relative;
+       width: 100%;
+       top:30%;
+   }
+.dragImg img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.plyImg img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.playerInner{
+    float: left;
+    width: 50%;
+}
+.dragonInner  {
+    float: left;
+    width: 50%;
+}
+.playButtons{
+    width: 100%;
+    float: left;
+    z-index: 1;
+}
+.youHealth{
+    width:250px;
+    border:1px solid black;
+    text-align: center;
+    display: inline-block;
+}
+.dragHealth{
+    width:250px;
+    border:1px solid black;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.divComment{
+    overflow-y:scroll;
+    max-height: 300px;
+    height: 182px;
+}
+.modal-title{
+    color: black;
+}

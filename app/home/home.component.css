@@ -1,0 +1,63 @@
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 170px;
+    height: 38px;
+    font-size: 20px;
+}
+.mainClass{
+    text-align:center;
+    color:white;
+    margin: 0;
+    padding: 0;
+    background-image: url("../../assets/bg.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+    height: 650px;
+    box-sizing: border-box;
+    background-repeat: repeat;    
+}
+.mainPageDiv{
+    width: 500px;
+    height: 400px;
+    border-radius: 12px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+.DivYou{
+    margin-top: 50px;
+    width: 48%;
+    float: left;
+    margin-right: 5px;
+}
+h2{
+    margin-top:30px;
+}
+.DivDrag{
+    margin-top: 50px;
+    width: 48%;
+    float: right;
+}
+.startBtn{
+    margin-top: 300px;
+}
+.homeDiv{
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 420px;
+    padding: 80px,40px;
+    box-sizing: border-box;
+    background: rgba(78, 71, 71, 0.8);
+}
+.dragImg img{
+    width: 100px;
+    height: 100px;
+}
+.plyImg img{
+    width: 100px;
+    height: 100px;
+}

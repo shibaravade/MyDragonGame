@@ -1,0 +1,32 @@
+<div class="homeDiv container">
+  <h2><strong>
+      Welcome to {{ title }}!</strong>
+  </h2>
+  <div class="DivYou">
+    <div class="plyImg">
+      <img src="../assets/ply.png" alt="dragon">
+    </div>
+    <label>You</label>
+    <div class="progress">
+      <div class="progress-bar" class="btn-success" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+        aria-valuemax="100" style="width:70%">
+        70%
+      </div>
+    </div>
+  </div>
+  <div class="DivDrag">
+    <div class="dragImg">
+      <img src="../assets/dragonimg.png" alt="dragon">
+    </div>
+    <label>Dragon</label>
+    <div class="progress">
+      <div class="progress-bar" class="btn-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0"
+        aria-valuemax="100" style="width:30%">
+        30%
+      </div>
+    </div>
+  </div>
+  <div class="startBtn">
+    <a routerLink="/gamewindow"> <button class="btn-primary"> Start Game</button></a>
+  </div>
+</div>
